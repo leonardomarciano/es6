@@ -1,3 +1,4 @@
+const Message = require('./message.model')
 class ImageMessage extends Message {
   constructor(text = '', created = Date.now(),
     url = '', thumbnail = '') {
@@ -16,3 +17,5 @@ class ImageMessage extends Message {
            `- Thumbnail: ${this.thumbnail}`;
   }
 }
+
+module.exports = ImageMessage
